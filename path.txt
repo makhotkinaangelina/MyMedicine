@@ -1,0 +1,4 @@
+http://localhost/site/main.php
+
+
+http://localhost/phpmyadmin/index.php?route=/server/databases

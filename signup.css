@@ -1,0 +1,31 @@
+.form-floating {
+    margin: 20px;
+}
+
+.form-floating input:invalid {
+    border: 1px solid red;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.signup-btn:hover, .signup-btn:active  {
+    background-color: #96d496;;
+    color: white; /* Цвет текста при наведении */
+}

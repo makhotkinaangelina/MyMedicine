@@ -1,0 +1,31 @@
+.btn-primary{
+    background-color:green;
+    border: 0;
+}
+
+.form-floating {
+    margin: 20px;
+}
+
+.form-floating input:invalid {
+    border: 1px solid red;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}

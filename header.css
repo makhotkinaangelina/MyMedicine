@@ -1,0 +1,10 @@
+.login-btn:hover, .login-btn:active {
+    background-color: #96d496;
+    color: white; /* Цвет текста при наведении */
+    border: none;
+}
+
+.signup-btn:hover, .signup-btn:active {
+    background-color: #96d496;;
+    color: white; /* Цвет текста при наведении */
+}

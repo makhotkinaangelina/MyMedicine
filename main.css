@@ -1,0 +1,31 @@
+.btn-primary{
+    background-color:green;
+    border: 0;
+}
+
+
+.btn-outline-primary{
+    color: green;
+    border-color: green;
+}
+
+.name-site{
+    color:green;
+}
+
+.btn-outline-secondary{
+background-color: green;
+color: black;
+width: 80%;
+height:150px;
+}
+
+.col{
+padding: 20px;
+}
+
+
+.btn-doctor:hover{
+    background-color: #96d496;;
+    color: white; /* Цвет текста при наведении */
+}

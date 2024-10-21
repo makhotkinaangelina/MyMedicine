@@ -1,0 +1,36 @@
+.form-floating {
+    margin: 10px;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.add-btn:hover, .add-btn:active  {
+    background-color: #96d496;;
+    color: white; 
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-top: 10px;
+}
