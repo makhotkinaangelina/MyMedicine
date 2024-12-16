@@ -22,4 +22,3 @@ foreach ($newDates as $key => $date) {
 } else {
     http_response_code(405); 
 }
-?>  

@@ -27,5 +27,5 @@ h2 {
 
 .signup-btn:hover, .signup-btn:active  {
     background-color: #96d496;;
-    color: white; /* Цвет текста при наведении */
+    color: white; 
 }

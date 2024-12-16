@@ -32,27 +32,41 @@ function getDoctorInfo(doctor_id) {
 }
 
 function submitAppointment(doctorId) {
-    var selectedTime = document.querySelector('input[name="selected_time_' + doctorId + '"]:checked');
-    if (selectedTime) {
-        var selectedDate = selectedTime.parentNode.parentNode.parentNode.querySelector('p').textContent;
+    fetch('check_session.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Logged In Status:', data.loggedIn);
+            if (!data.loggedIn) {
+                alert('Пожалуйста, войдите в систему или зарегистрируйтесь, чтобы записаться на прием.');
+                window.location.href = 'login.php'; 
+                return;
+            }
 
-        var modal = document.getElementById('commentModal');
-        var commentInput = document.getElementById('commentInput');
-        var submitCommentBtn = document.getElementById('submitCommentBtn');
+            var selectedTime = document.querySelector('input[name="selected_time_' + doctorId + '"]:checked');
+            if (selectedTime) {
+                var selectedDate = selectedTime.parentNode.parentNode.parentNode.querySelector('p').textContent;
 
-        modal.style.display = 'block'; 
+                var modal = document.getElementById('commentModal');
+                var commentInput = document.getElementById('commentInput');
+                var submitCommentBtn = document.getElementById('submitCommentBtn');
 
-        submitCommentBtn.onclick = function() {
-            var comment = commentInput.value;
-            document.getElementById('time_' + doctorId).value = selectedTime.value;
-                document.getElementById('date_' + doctorId).value = selectedDate;
-                document.getElementById('comment_' + doctorId).value = comment;
-                document.getElementById('appointment_form_' + doctorId).submit();
-                modal.style.display = 'none'; 
-        };
-    } else {
-        alert('Пожалуйста, выберите время для записи.');
-    }
+                modal.style.display = 'block'; 
+
+                submitCommentBtn.onclick = function() {
+                    var comment = commentInput.value;
+                    document.getElementById('time_' + doctorId).value = selectedTime.value;
+                    document.getElementById('date_' + doctorId).value = selectedDate;
+                    document.getElementById('comment_' + doctorId).value = comment;
+                    document.getElementById('appointment_form_' + doctorId).submit();
+                    modal.style.display = 'none'; 
+                };
+            } else {
+                alert('Пожалуйста, выберите время для записи.');
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка при проверке сессии:', error);
+        });
 }
 
 function setSelectedCategoryID(categoryID) {

@@ -3,20 +3,21 @@ table {
     width: 70%;
     margin: 0 auto;
 }
+
 .form-container {
-    text-align: center; /* Центрирует содержимое формы по горизонтали */
-    margin: 20px auto; /* Устанавливает автоматичесные отступы по вертикали и по горизонтали */
-    width: 70%; /* Ширина контейнера формы */
+    text-align: center;
+    margin: 20px auto; 
+    width: 70%; 
 }
 
 .form-container form {
-    display: inline-block; /* Размещает форму в одной строке */
+    display: inline-block; 
 }
 
 .form-container input[type="text"],
 .form-container input[type="submit"] {
-    padding: 8px; /* Задает отступ внутри полей ввода и кнопки */
-    margin: 5px; /* Задает отступы вокруг полей ввода и кнопки */
+    padding: 8px; 
+    margin: 5px;
 }
 
 .doctor-name {

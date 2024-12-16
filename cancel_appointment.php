@@ -2,6 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require_once 'db.php';
     session_start();
+
     if (isset($_POST['appointment_id'])) {
         $appointment_id = $_POST['appointment_id'];
 

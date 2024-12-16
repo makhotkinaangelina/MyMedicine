@@ -20,6 +20,20 @@ th, td {
     text-align: left;
 }
 
+
+.doctor-photo {
+    max-width: 200px; /* Максимальная ширина фотографии */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border: 3px solid #007bff; /* Граница вокруг фото */
+}
+
+.doctor-info {
+    background-color: #f9f9f9; /* Светлый фон блока */
+    border-radius: 10px; /* Скруглённые углы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
 .accept-btn {
     background-color: green;
     color: white;

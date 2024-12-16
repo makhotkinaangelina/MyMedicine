@@ -19,7 +19,8 @@ if(isset($_SESSION['user_id'])) {
             if ($user['role'] === 'patient') {
                 echo '<a href="my_profile.php" class="btn btn-outline-primary">My Profile</a>';
             } elseif ($user['role'] === 'admin') {
-                echo '<a href="history.php" class="btn btn-outline-success">User\'s history </a>';
+                echo '<a href="users_appointments_info.php" class="btn btn-outline-success">Appointments info</a>';
+                echo '<a href="settings.php" class="btn btn-outline-success">Settings</a>';
                 echo '<a href="admin_panel.php" class="btn btn-outline-success">Admin Panel</a>';
             }
         
